@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ia;
-
+//  By: RETBOT
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
@@ -36,7 +36,7 @@ public class Dibujo {
             hoja.drawLine(0, i, componente.getWidth(), i); // líneas horizontales
             hoja.drawLine(i, 0, i, componente.getWidth()); //líneas verticales
         }
-        
+        //  By: RETBOT
         try {
             Thread.sleep(100);
         } catch (InterruptedException ex) {
@@ -77,7 +77,7 @@ public class Dibujo {
         hoja.drawOval(x + 22, y + 25, 8, 4); // Boca
         hoja.drawLine(x + 25, y + 5, x + 25, y + 10); // antena
         hoja.drawOval(x + 21, y + 0, 8, 4); // antena
-        
+        //  By: RETBOT
          try {
             Thread.sleep(100);
         } catch (InterruptedException ex) {
@@ -120,7 +120,7 @@ public class Dibujo {
         hoja.drawLine(x + 25, y + 5, x + 25, y + 10); // antena
         hoja.drawOval(x + 21, y + 0, 8, 4); // antena
         
-         try {
+         try {//  By: RETBOT
             Thread.sleep(100);
         } catch (InterruptedException ex) {
             java.util.logging.Logger.getLogger(IAFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
@@ -151,7 +151,7 @@ public class Dibujo {
         
         hoja.setColor(Color.BLACK); // Seleccionamos el color del Contorno
         hoja.drawRect(x + 15, y + 10, 20, 20); // y lo dibujamos  
-    }
+    }//  By: RETBOT
     
      // dibuja las pelotas en el tablero 
     public static void generarPelotas(int evil[][],int cant,Component componente){        
@@ -185,7 +185,7 @@ public class Dibujo {
             // Obtenemos X y Y del arreglo
             int auxX = evil[k][0];
             int auxY = evil[k][1];
-            
+            //  By: RETBOT
             // recorremos todas las posiciones 
             for (int i = 0; i < cant; i++) {
                 // Si k e i son iguales, no hace nada (porque es la misma posición y lo va a modificar)
@@ -228,7 +228,7 @@ public class Dibujo {
             dibujarBOT(rx, ry, componente); // y se dibuja
         }else if(color.equals(Color.RED)){// si es rojo, es la casilla de llegada 
             dibujarPelota(rx, ry, componente);
-        }
+        }//  By: RETBOT
         else if (color.equals(Color.PINK)) {
             dibujarPila(rx, ry, componente);// y se dibuja
         }
@@ -238,6 +238,6 @@ public class Dibujo {
      }
 }
        
-    
+    //  By: RETBOT
  
 
