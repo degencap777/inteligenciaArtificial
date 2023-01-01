@@ -1,0 +1,40 @@
+[System]
+Name='Ejemplo1'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=3
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Servicio'
+Range=[0 1]
+NumMFs=3
+MF1='malo':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='bueno':'trimf',[0.0806878306878306 0.497354497354497 0.914021164021164]
+MF3='excelente':'trimf',[0.583333333333333 1 1.41666666666667]
+
+[Input2]
+Name='Comida'
+Range=[0 1]
+NumMFs=2
+MF1='Malo':'trimf',[-0.417 0 0.496031746031746]
+MF2='Deliciosa':'trimf',[0.499 1.00661375661376 1.33]
+
+[Output1]
+Name='Propina'
+Range=[0 1]
+NumMFs=3
+MF1='pequeña':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='normal':'trimf',[0.0833333333333333 0.5 0.916666666666667]
+MF3='generosa':'trimf',[0.583333333333333 1 1.41666666666667]
+
+[Rules]
+1 1, 1 (1) : 1
+2 0, 2 (1) : 1
+3 2, 3 (1) : 1
