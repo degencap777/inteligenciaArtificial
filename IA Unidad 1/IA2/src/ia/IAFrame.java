@@ -7,7 +7,7 @@ import java.awt.Point;
 import java.awt.Stroke;
 import java.util.ArrayList;
 import java.util.List;
-
+//  By: RETBOT
 /**
  *
  * @author RETBOT
@@ -54,7 +54,7 @@ public final class IAFrame extends javax.swing.JFrame {
     // inicio 
     public IAFrame() {
         initComponents();
-    }
+    }//  By: RETBOT
      
     // crea el tablero vacio y recorrido del tablero
     private void createGrid() {
@@ -92,7 +92,7 @@ public final class IAFrame extends javax.swing.JFrame {
             }
         }
     }
-    
+    //  By: RETBOT
     // metodo para dibujar los Nodos
     private void drawNode(Graphics2D g, Node<Point> node) {
         Color color = Color.BLACK; // color principal 
@@ -205,7 +205,7 @@ public final class IAFrame extends javax.swing.JFrame {
         jRBVelocidadMedio = new javax.swing.JRadioButton();
         jRBVelocidadRapido = new javax.swing.JRadioButton();
         jButIniciar = new javax.swing.JButton();
-
+//  By: RETBOT
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("IA RETBOT");
         setBackground(new java.awt.Color(153, 153, 255));
@@ -268,7 +268,7 @@ public final class IAFrame extends javax.swing.JFrame {
                         .addComponent(jRBDificultadDificil)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-        );
+        );//  By: RETBOT
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -357,7 +357,7 @@ public final class IAFrame extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabCosto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(9, Short.MAX_VALUE))
-        );
+        );//  By: RETBOT
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -439,7 +439,7 @@ public final class IAFrame extends javax.swing.JFrame {
         y = evil[0][1];
         int nx = dePixelesACoordenadas(x);
         int ny = dePixelesACoordenadas(y);
-        
+        //  By: RETBOT
         // fin de la ruta
         int nxFin = dePixelesACoordenadas(evil[1][0]);
         int nyFin = dePixelesACoordenadas(evil[1][1]);
@@ -539,7 +539,7 @@ public final class IAFrame extends javax.swing.JFrame {
             }
         });
     }
-
+//  By: RETBOT
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPTablero;
     private javax.swing.ButtonGroup buttonGroup1;
