@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author rober
+ * @author rober//  By: RETBOT
  */
 public class Dibujo {
     public static void dibujarEdificio(Component componente){
@@ -57,7 +57,7 @@ public class Dibujo {
             Logger.getLogger(Dibujo.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-     
+     //  By: RETBOT
      public static void dibujarPersona(int x, int y,Component componente){
         Graphics hoja = componente.getGraphics();
         
@@ -75,3 +75,4 @@ public class Dibujo {
         }
     }
 }
+//  By: RETBOT
