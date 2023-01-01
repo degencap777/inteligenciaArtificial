@@ -8,7 +8,7 @@ import java.util.List;
  * 
  * @author RETBOT
  */
-
+//  By: RETBOT
 // clase para establecer los nodos
 public class Node<T> implements Comparable<Node> {
 
@@ -43,7 +43,7 @@ public class Node<T> implements Comparable<Node> {
     public State getState() {
         return state;
     }
-
+//  By: RETBOT
     // Método para poner el estado 
     void setState(State state) {
         this.state = state;
@@ -77,7 +77,7 @@ public class Node<T> implements Comparable<Node> {
     // Método para poner agua
     public void setAgua(boolean agua) {
         this.agua = agua;
-    }
+    }//  By: RETBOT
 
     // Método para obtener costo
     public double getG() {
@@ -113,7 +113,7 @@ public class Node<T> implements Comparable<Node> {
     public List<Edge<T>> getEdges() {
         return edges;
     }
-
+//  By: RETBOT
     //Método para agregar a la lista de búsquedas
     public void addEdge(Edge edge) {
         edges.add(edge);
@@ -130,7 +130,7 @@ public class Node<T> implements Comparable<Node> {
             backPathNode.retrievePath(path);
         }
         path.add(this);
-    }
+    }//  By: RETBOT
     
     // Método para comparar los nodos
     @Override
@@ -145,4 +145,4 @@ public class Node<T> implements Comparable<Node> {
             + h + ", parentNode=" + backPathNode + ", edges=" + edges + '}';
     }
     
-}
+}//  By: RETBOT
