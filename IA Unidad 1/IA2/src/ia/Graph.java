@@ -6,7 +6,7 @@ import static ia.Node.State.UNVISITED;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
-
+//  By: RETBOT
 /**
  * Graph class.
  * 
@@ -40,7 +40,7 @@ public class Graph<T> {
     public Heuristic<T> getHeuristic() {
         return heuristic;
     }
-    
+    //  By: RETBOT
     // metodo para el enlace de los nodos
     public void link(Node a, Node b, double cost) {
         // Creamos un nuevo objeto para determinar el costo de los nodos 
@@ -77,7 +77,7 @@ public class Graph<T> {
                 path.clear(); // se limpia el path
                 target.retrievePath(path); // y se obtiene la ruta 
                 return;
-            }            
+            }    //  By: RETBOT        
             // si aun no encontro el nodo destino, continua con las busquedas
             currentNode.getEdges().forEach((edge) -> {
                 // se establece el nodo vecino 
@@ -116,5 +116,5 @@ public class Graph<T> {
             });
         }
     }
-    
+    //  By: RETBOT
 }
