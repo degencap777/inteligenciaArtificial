@@ -1,5 +1,5 @@
 package u4_algoritmos.geneticos; // PAQUETE GENERADO POR JAVA
-
+//  By: RETBOT
 // Clases importadas utilizadas en este proyecto
 import static java.lang.Math.ceil;
 import static java.lang.Math.floor;
@@ -33,7 +33,7 @@ public class U4_Frame extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
+//  By: RETBOT
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
@@ -83,7 +83,7 @@ public class U4_Frame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("U4  ALGORITMOS GENETICOS ");
-
+//  By: RETBOT
         jLabel6.setText("Generacion actual:");
 
         cicloActual.setText("0");
@@ -131,7 +131,7 @@ public class U4_Frame extends javax.swing.JFrame {
                     .addComponent(jRBPiernaMediana)
                     .addComponent(jRBPiernaGrande))
                 .addGap(0, 16, Short.MAX_VALUE))
-        );
+        );//  By: RETBOT
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -173,7 +173,7 @@ public class U4_Frame extends javax.swing.JFrame {
                 jRBOrejaGrandeActionPerformed(evt);
             }
         });
-
+//  By: RETBOT
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -231,7 +231,7 @@ public class U4_Frame extends javax.swing.JFrame {
                 jRBColmillosGrandeActionPerformed(evt);
             }
         });
-
+//  By: RETBOT
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -300,7 +300,7 @@ public class U4_Frame extends javax.swing.JFrame {
                     .addComponent(jRBTrompaMediana)
                     .addComponent(jRBTrompaGrande))
                 .addContainerGap(25, Short.MAX_VALUE))
-        );
+        );//  By: RETBOT
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
@@ -354,7 +354,7 @@ public class U4_Frame extends javax.swing.JFrame {
         );
 
         jPanelElefante4.setBackground(new java.awt.Color(153, 153, 255));
-
+//  By: RETBOT
         javax.swing.GroupLayout jPanelElefante4Layout = new javax.swing.GroupLayout(jPanelElefante4);
         jPanelElefante4.setLayout(jPanelElefante4Layout);
         jPanelElefante4Layout.setHorizontalGroup(
@@ -453,7 +453,7 @@ public class U4_Frame extends javax.swing.JFrame {
         );
 
         jPanelElefante8.setBackground(new java.awt.Color(153, 153, 255));
-
+//  By: RETBOT
         javax.swing.GroupLayout jPanelElefante8Layout = new javax.swing.GroupLayout(jPanelElefante8);
         jPanelElefante8.setLayout(jPanelElefante8Layout);
         jPanelElefante8Layout.setHorizontalGroup(
@@ -634,7 +634,7 @@ public class U4_Frame extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuIniciarActionPerformed
 ///---------------------------------------------------------------------------------
     /// BOTON PAUSAR, SE ENCUENTRA EN EL JMENU.
-    // Menu > Pausar
+    // Menu > Pausar//  By: RETBOT
     private void jMenuPausarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuPausarActionPerformed
         jMenuPausar.setEnabled(false); // Se inhabilita el boton de pausar, porque ya fue presionado
         jMenuReanudar.setEnabled(true); // Se  habilita el boton para poder reanuadar el proceso
@@ -676,7 +676,7 @@ public class U4_Frame extends javax.swing.JFrame {
     private void jRBPiernaMedianaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBPiernaMedianaActionPerformed
      // Asignamos valor de 2, que vendria sirve como identificador como 
          // parte "mediana"
-        ePierna = 2;
+        ePierna = 2;//  By: RETBOT
     }//GEN-LAST:event_jRBPiernaMedianaActionPerformed
 ///---------------------------------------------------------------------------------
 /// Radio Button para la pierna grande
@@ -718,7 +718,7 @@ public class U4_Frame extends javax.swing.JFrame {
     private void jRBColmillosMedianaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBColmillosMedianaActionPerformed
    // Asignamos valor de 2, que vendria sirve como identificador como 
          // parte "mediano"
-        eColmillos = 2;
+        eColmillos = 2;//  By: RETBOT
     }//GEN-LAST:event_jRBColmillosMedianaActionPerformed
 ///---------------------------------------------------------------------------------
 /// Radio Button para la colmillos grandes
@@ -794,7 +794,7 @@ public class U4_Frame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(U4_Frame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+//  By: RETBOT
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
