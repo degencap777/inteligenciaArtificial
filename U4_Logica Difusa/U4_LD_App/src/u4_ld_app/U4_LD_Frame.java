@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package u4_ld_app;
-
+//  By: RETBOT
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -38,7 +38,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
             String[] membresiaCarga = FuzzyLogic.MembresiaCDLL(cargas);
             String[] membresiaDisViaje = FuzzyLogic.MembresiaTeTvDv(distViaje);
             String[] membresiaCargaPactual = FuzzyLogic.MembresiaCDLL(cargaActual);
-
+//  By: RETBOT
             resultado += "\nMembresias\n";
             resultado += Calculos.membresiaS("Tiempo Espera:", membresiaTmpEspera);
             resultado += Calculos.membresiaS("Tiempo Viaje: ", membresiaTmpViajes);
@@ -78,7 +78,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
              
              return prioridad;
     }
-     
+     //  By: RETBOT
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -1065,7 +1065,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         
         jRBtn2.setSelected(false);
     }//GEN-LAST:event_jRBtn2ActionPerformed
-
+//  By: RETBOT
     private void jRBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBtn3ActionPerformed
         // TODO add your handling code here:
         jSP3.setEnabled(true);
@@ -1106,7 +1106,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         if (!((int) jSPDP4.getValue() == llamadaElevador)) {
         double tmpEsperas = Calculos.tmpEspera(llamadaElevador, posElevador);
         double tmpViajes = Calculos.tmpViaje(llamadaElevador, destino);
-         
+         //  By: RETBOT
         double cargas = Calculos.carga((int)jSP4.getValue());
         double distViaje = Calculos.disViaje(llamadaElevador, posElevador);
         double cargaActual = Calculos.cargaActual((int) jSP4.getValue());
@@ -1142,7 +1142,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         resultado += Calculos.resultadosP(llamadaElevador, tmpEsperas, tmpViajes, cargas,
                                 distViaje, cargaActual);
         resultado += "\n"+llamadaElevador+" -> "+destino+"\n";
-        
+        //  By: RETBOT
          double pri = prioridad(tmpEsperas, tmpViajes, cargas, distViaje, cargaActual);
          fl.agregarValor(pri, llamadaElevador, destino);
         } else {
@@ -1189,7 +1189,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         int llamadaElevador = 8;
         int destino = (int) jSPDP8.getValue();
         int posElevador = fl.getX();
-        
+        //  By: RETBOT
         if (!((int) jSPDP8.getValue() == llamadaElevador)) {
         double tmpEsperas = Calculos.tmpEspera(llamadaElevador, posElevador);
         double tmpViajes = Calculos.tmpViaje(llamadaElevador, destino);
@@ -1217,7 +1217,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         int llamadaElevador = 8;
         int destino = (int) jSPDP8.getValue();
         int posElevador = fl.getX();
-        
+        //  By: RETBOT
         if (!((int) jSPDP8.getValue() == llamadaElevador)) {
         double tmpEsperas = Calculos.tmpEspera(llamadaElevador, posElevador);
         double tmpViajes = Calculos.tmpViaje(llamadaElevador, destino);
@@ -1246,7 +1246,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         int destino = (int) jSPDP9.getValue();
         int posElevador = fl.getX();
         
-        
+        //  By: RETBOT
         if (!((int) jSPDP9.getValue() == llamadaElevador)) {
         double tmpEsperas = Calculos.tmpEspera(llamadaElevador, posElevador);
         double tmpViajes = Calculos.tmpViaje(llamadaElevador, destino);
@@ -1286,7 +1286,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         resultado += Calculos.resultadosP(llamadaElevador, tmpEsperas, tmpViajes, cargas,
                                 distViaje, cargaActual);
         resultado += "\n"+llamadaElevador+" -> "+destino+"\n";
-        
+        //  By: RETBOT
         double pri = prioridad(tmpEsperas, tmpViajes, cargas, distViaje, cargaActual);
         fl.agregarValor(pri, llamadaElevador, destino);
 
@@ -1348,7 +1348,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         
         double pri = prioridad(tmpEsperas, tmpViajes, cargas, distViaje, cargaActual);
         fl.agregarValor(pri, llamadaElevador, destino);
-
+//  By: RETBOT
         } else {
             JOptionPane.showMessageDialog(null, "Indique un destino");
         }
@@ -1436,7 +1436,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         
         double pri = prioridad(tmpEsperas, tmpViajes, cargas, distViaje, cargaActual);
         fl.agregarValor(pri, llamadaElevador, destino);
-        
+        //  By: RETBOT
         } else {
             JOptionPane.showMessageDialog(null, "Indique un destino");
         }
@@ -1462,7 +1462,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
         resultado += Calculos.resultadosP(llamadaElevador, tmpEsperas, tmpViajes, cargas,
                                 distViaje, cargaActual);
         resultado += "\n"+llamadaElevador+" -> "+destino+"\n";
-        
+        //  By: RETBOT
         double pri = prioridad(tmpEsperas, tmpViajes, cargas, distViaje, cargaActual);
         fl.agregarValor(pri, llamadaElevador, destino);
         } else {
@@ -1549,7 +1549,7 @@ public class U4_LD_Frame extends javax.swing.JFrame {
 
     private void jBtnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSiguienteActionPerformed
         // TODO add your handling code here:
-         fl.setTermino(false);
+         fl.setTermino(false);//  By: RETBOT
     }//GEN-LAST:event_jBtnSiguienteActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
