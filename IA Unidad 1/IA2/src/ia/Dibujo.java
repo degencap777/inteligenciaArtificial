@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ia;
-
+//  By: RETBOT
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
@@ -34,7 +34,7 @@ public class Dibujo {
         for(int i=50; i<=500; i+=50){
             hoja.drawLine(0, i, componente.getWidth(), i); // líneas horizontales
             hoja.drawLine(i, 0, i, componente.getWidth()); //líneas verticales
-        }
+        }//  By: RETBOT
         
         try {
             Thread.sleep(100);
@@ -64,7 +64,7 @@ public class Dibujo {
         hoja.setColor(Color.BLACK); // Cara Relleno
         hoja.fillOval(x + 19, y + 17, 5, 5); // Ojos <-
         hoja.fillOval(x + 28, y + 17, 5, 5); // Ojos ->
-        
+        //  By: RETBOT
         hoja.setColor(Color.BLACK); // Contorno
         hoja.drawRect(x + 15, y + 10, 20, 20); // Cabeza 
         hoja.drawRect(x + 18, y + 30, 14, 12); // Cuerpo 
@@ -102,7 +102,7 @@ public class Dibujo {
      //  Método para dibujar Pila en tablero
      public static void dibujarPila(int x, int y, Component componente){
         Graphics hoja = componente.getGraphics();
-
+//  By: RETBOT
         hoja.setColor(Color.BLUE); // Seleccionamos el color de relleno
         hoja.fillRect(x + 15, y + 10, 20, 20); // y lo dibujamos 
         
@@ -136,7 +136,7 @@ public class Dibujo {
         hoja.drawLine(25 + x, 45 + y, x + 10, y + 30);
         hoja.drawLine(25 + x, 45 + y, x + 35, y + 30);
         hoja.drawLine(50 + x, 45 + y, x + 35, y + 30);
-    }
+    }//  By: RETBOT
      
       //  Método para dibujar tierra en tablero
      public static void dibujarTierra(int x, int y, Component componente){
@@ -177,7 +177,7 @@ public class Dibujo {
         }
         return num; // y lo retorna
     }
-    
+    //  By: RETBOT
     // generar numeros distintos 
     public static void aleatorios(int evil[][], int cant) {
         // recordido de la cantidad de los numeros aleatorios 
@@ -214,7 +214,7 @@ public class Dibujo {
                         }
                     }
                 }
-            }
+            }//  By: RETBOT
         }
     }
     
@@ -244,7 +244,7 @@ public class Dibujo {
         
      }
 }
-       
+       //  By: RETBOT
     
  
 
