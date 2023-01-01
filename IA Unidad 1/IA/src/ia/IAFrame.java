@@ -11,7 +11,7 @@ import java.awt.Point;
 import java.awt.Stroke;
 import java.util.ArrayList;
 import java.util.List;
-
+//  By: RETBOT
 /**
  *
  * @author RETBOT
@@ -48,7 +48,7 @@ public final class IAFrame extends javax.swing.JFrame {
     private Graph<Point> graph;
     // inicio
     private Node<Point> startNode;
-    // fin
+    // fin//  By: RETBOT
     private Node<Point> targetNode;
     // lista de todos los nodos
     private List<Node<Point>> path;
@@ -96,7 +96,7 @@ public final class IAFrame extends javax.swing.JFrame {
                 grid[y2][x2] = node;
             }
         }
-        
+        //  By: RETBOT
         // recorrido en el tablero 
         // Recorrido vertical
         for (int y2 = 0; y2 < GRID_ROWS - 1; y2++) {
@@ -142,7 +142,7 @@ public final class IAFrame extends javax.swing.JFrame {
                 color = Color.PINK;
             } else if (node.isPelota()) { // si es pelota
                 color = Color.YELLOW;
-            }
+            }//  By: RETBOT
 
         } else if (node.isBlocked()) {// si esta bloqueado es negro 
             color = Color.BLACK;
@@ -177,7 +177,7 @@ public final class IAFrame extends javax.swing.JFrame {
             g.drawLine(x1, y1, x2, y2);
             // Velocidad de trazado en pantalla
             if (jRBVelocidadLento.isSelected()) {
-                try {
+                try {//  By: RETBOT
                     Thread.sleep(500);
                 } catch (InterruptedException ex) {
                     java.util.logging.Logger.getLogger(IAFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
@@ -411,7 +411,7 @@ public final class IAFrame extends javax.swing.JFrame {
         // se reinicia la bateria 
         bateria = 1000;
         banBateria = true;
-        
+         //  By: RETBOT
         //CREAMOS ORIGEN DE LA RUTA
         int nx = Calculos.dePixelesACoordenadas(x);
         int ny = Calculos.dePixelesACoordenadas(y);
@@ -454,7 +454,7 @@ public final class IAFrame extends javax.swing.JFrame {
                 });
                 // se crea el tablero 
                 createGrid();
-
+//  By: RETBOT
                 // se agregan las pelotitas
                 for (int j = 0; j < coordX.size(); j++) {
                     int row = coordX.get(j);
@@ -536,7 +536,7 @@ public final class IAFrame extends javax.swing.JFrame {
                          // recorrido en el tablero 
                         graph.getNodes().forEach(node -> {
                             drawNode(g, node);
-                        });
+                        });//  By: RETBOT
                         // se dibuja el reccorrido 
                         drawPath(g);
                          // y se establece el costo 
@@ -569,7 +569,7 @@ public final class IAFrame extends javax.swing.JFrame {
                             distCoordAux.add(Calculos.heuristica(nx, ny, nxFin, nyFin));
                             j++;
                         }
-
+//  By: RETBOT
                 // Una vez obtenido la pelotita más cercana, obtenemos sus coordenadas
                         indice = 0; // /Para después ver cuál es la distancia más corta 
                         menor = distCoordAux.get(0);// Iniciando por la primera pelotita
@@ -649,7 +649,7 @@ public final class IAFrame extends javax.swing.JFrame {
                 estadoBateria = bateria * 1 / 10;
                 jTAResultados.append("Estado de Bateria = " + estadoBateria + "% \n");
                 // y se actualiza el estado actual del robot 
-                nx = nxFin;
+                nx = nxFin;//  By: RETBOT
                 ny = nyFin;
                 // se eliminan las coordenadas
                 coordX.remove(indice);
@@ -693,7 +693,7 @@ public final class IAFrame extends javax.swing.JFrame {
                 new IAFrame().setVisible(true);
             }
         });
-    }
+    }//  By: RETBOT
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPTablero;
