@@ -10,7 +10,7 @@ package u4_ld_app;
  */
 public class Reglas {
     
-    
+    //  By: RETBOT
     public static String [] Reglas(String reglaTmpEspera, double vReglaTmpEspera, 
                                    String reglaTmpViaje, double vReglaTmpViaje, 
                                    String reglaCarga, double vReglaCarga,
@@ -64,7 +64,7 @@ public class Reglas {
                     FuzzyLogic.OperadorAnd(vReglaCarga, 
                     FuzzyLogic.OperadorAnd(vReglaDisViaje,vReglaCargaPesoActual)))) + "";
         }
-        
+        //  By: RETBOT
         // 5
         // Si el tiempo de espera es bajo, el tiempo de viaje es bajo, la carga es ligera
         // la distancia de viaje es alto y la carga del piso actual es ligera, 
@@ -103,7 +103,7 @@ public class Reglas {
                     FuzzyLogic.OperadorAnd(vReglaCarga, 
                     FuzzyLogic.OperadorAnd(vReglaDisViaje,vReglaCargaPesoActual)))) + "";
         }
-        
+        //  By: RETBOT
         if(reglaTmpEspera.equals("Bajo") && reglaTmpViaje.equals("Alto") && reglaCarga.equals("Medio") && reglaDisViaje.equals("Bajo") && reglaCargaPesoActual .equals("Medio")){
             resRegla[0] = "Alta";
             resRegla[1] = FuzzyLogic.OperadorAnd(vReglaTmpEspera, 
@@ -393,7 +393,7 @@ public class Reglas {
                     FuzzyLogic.OperadorAnd(vReglaCarga, 
                     FuzzyLogic.OperadorAnd(vReglaDisViaje,vReglaCargaPesoActual)))) + "";
         }
-        
+        //  By: RETBOT
         // 27														
         if(reglaTmpEspera.equals("Bajo") && reglaTmpViaje.equals("Medio") && reglaCarga.equals("Medio") && reglaDisViaje.equals("Medio") && reglaCargaPesoActual .equals("Ligera")){
             resRegla[0] = "Media";
@@ -512,7 +512,7 @@ public class Reglas {
                     FuzzyLogic.OperadorAnd(vReglaCarga, 
                     FuzzyLogic.OperadorAnd(vReglaDisViaje,vReglaCargaPesoActual)))) + "";
         }
-        
+        //  By: RETBOT
         if(reglaTmpEspera.equals("Bajo") && reglaTmpViaje.equals("Bajo") && reglaCarga.equals("Pesado") && reglaDisViaje.equals("Bajo") && reglaCargaPesoActual .equals("Medio")){
             resRegla[0] = "Media";
             resRegla[1] = FuzzyLogic.OperadorAnd(vReglaTmpEspera, 
@@ -691,7 +691,7 @@ public class Reglas {
                     FuzzyLogic.OperadorAnd(vReglaCarga, 
                     FuzzyLogic.OperadorAnd(vReglaDisViaje,vReglaCargaPesoActual)))) + "";
         }
-       
+       //  By: RETBOT
         //43																						
         if(reglaTmpEspera.equals("Bajo") && reglaTmpViaje.equals("Alto") && reglaCarga.equals("Pesado") && reglaDisViaje.equals("Bajo") && reglaCargaPesoActual .equals("Pesado")){
             resRegla[0] = "Baja";
@@ -783,4 +783,4 @@ public class Reglas {
         }
         return resRegla;
     }
-}
+}//  By: RETBOT
