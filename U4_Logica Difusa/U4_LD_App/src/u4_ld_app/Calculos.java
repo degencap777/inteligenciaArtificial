@@ -6,7 +6,7 @@ package u4_ld_app;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-
+//  By: RETBOT
 /**
  *
  * @author rober
@@ -42,7 +42,7 @@ public class Calculos {
         if(distancia < 0){ // entonces el elevador se encuentra por arriba de la llamada y se calcula la distanciia
              distancia = destinollamada - llamadaElevador;
         }  
-        
+        //  By: RETBOT
         double tmpViaje = distancia/15 + 0.06;
         
         return tmpViaje;
@@ -69,7 +69,7 @@ public class Calculos {
         // pero si la distancia de espera es negativa
         if(disViaje < 0){ // entonces el elevador se encuentra por arriba de la llamada y se calcula la distanciia
              disViaje = (posElevador - llamadaElevador) / 15.0 + 0.06 ;
-        }
+        }//  By: RETBOT
         return disViaje;
     }
     
@@ -98,7 +98,7 @@ public class Calculos {
         }
         return result;
     }
-    
+    //  By: RETBOT
     public static String [][] membresiaResultado(String [] membresia){
         String [][] resu = new String[membresia.length][2];
         for(int i=0; i<membresia.length; i++){
@@ -126,7 +126,7 @@ public class Calculos {
             val = 2;
         
         String[][] result = new String[val][2];
-        
+        //  By: RETBOT
         for(int i=0; i<val; i++){
             if(membresiaTmpEspera.length <= 1){
                 if(!visTmpEspera){
@@ -183,7 +183,7 @@ public class Calculos {
             } else if (membresiaCargaPactual.length > 1) {
                 valCargaPiso = Double.parseDouble(membresiaCargaPactual[i][0]);
                 cargaPiso = membresiaCargaPactual[i][1];
-                
+                //  By: RETBOT
             }
             System.out.println("\nval "+(i+1));
             System.out.println("tmpEspera = "+tmpEspera);
@@ -204,7 +204,7 @@ public class Calculos {
                 System.out.println("Result = "+result[i][j] +"\n");
             }
         }
-        
+        //  By: RETBOT
         
         return result;
     }
