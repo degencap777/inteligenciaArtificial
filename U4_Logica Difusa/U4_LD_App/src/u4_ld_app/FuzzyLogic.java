@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JPanel;
-
+//  By: RETBOT
 /**
  *
  * @author yo
@@ -40,7 +40,7 @@ public class FuzzyLogic extends Thread implements Runnable{
        
        ordenarPrioridad();
     }
-    
+    //  By: RETBOT
     private void ordenarPrioridad(){
         double prioridad;
         int piso;
@@ -117,7 +117,7 @@ public class FuzzyLogic extends Thread implements Runnable{
                         }
                         System.out.println("Pos elevador = "+(x+1));
                     }
-                }
+                }//  By: RETBOT
             }
             
         if (x != destino) {
@@ -295,7 +295,7 @@ public class FuzzyLogic extends Thread implements Runnable{
                 prioridad += inferencia2 * 1.0 / inferencia2;
             }
         }
-
+//  By: RETBOT
         return prioridad/2.0;
     }
         
@@ -315,3 +315,4 @@ public class FuzzyLogic extends Thread implements Runnable{
         this.x = x;
     }   
 }
+//  By: RETBOT
