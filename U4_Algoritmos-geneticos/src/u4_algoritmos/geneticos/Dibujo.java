@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package u4_algoritmos.geneticos;
-
+//  By: RETBOT
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
@@ -36,7 +36,7 @@ public class Dibujo {
         hoja.fillArc(x+10, y, componente.getWidth()/2, componente.getHeight()/2+50, 0, 180);
         hoja.fillOval(x-30, y-10, 50, 60);
         hoja.fillOval(x, y-15, componente.getWidth()/6, componente.getHeight()/7);
-        
+        //  By: RETBOT
         hoja.fillRect(x+113, y+70, 20, 40+piernas); // patas traseras
         hoja.fillRect(x+93, y+70, 20, 30+piernas);
         
@@ -73,7 +73,7 @@ public class Dibujo {
         hoja.drawLine(200, 121, 205, 121); /// cola
         hoja.drawLine(200, 87, 200, 121); /// cola
         hoja.drawLine(186, 87, 200, 87); /// cola
-        
+        //  By: RETBOT
         hoja.drawArc(62, 33, 40, 50+orejas, -140, 290);// oreja
         // tropma
         hoja.drawArc(30, 30, 30+trompa, 100+trompa, -200, 150);
@@ -97,7 +97,7 @@ public class Dibujo {
         hoja.drawLine(45, 90, 55+trompa, 120+trompa);
         
         hoja.drawArc(45, 75, 30, 20, -150, 140);
-        
+        //  By: RETBOT
         
     }
 }
