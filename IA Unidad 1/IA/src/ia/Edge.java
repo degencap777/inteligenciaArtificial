@@ -23,7 +23,7 @@ public class Edge<T> {
     // obtenemos G
     public double getG() {
         return g;
-    }
+    }//  By: RETBOT
 
     // ponemos G
     public void setG(double g) {
@@ -34,7 +34,7 @@ public class Edge<T> {
     public Node<T> getA() {
         return a;
     }
-
+//  By: RETBOT
     // nodo b
     public Node<T> getB() {
         return b;
@@ -55,4 +55,4 @@ public class Edge<T> {
         return "Edge{" + "g=" + g + ", a=" + a + ", b=" + b + '}';
     }
     
-}
+}//  By: RETBOT
