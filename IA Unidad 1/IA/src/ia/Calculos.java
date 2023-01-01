@@ -6,7 +6,7 @@ package ia;
  */
 // Clase utilizada para cálculos variados
 public class Calculos {
-    
+    //  By: RETBOT
     // Coordenadas X e Y en el tablero
     public static void cooordenadasXY(int evil[][], int cant, int coordenadas[][]) {
         int contaPelotas = 1; // contador de pelotas inicia en 1, porque el robto es el primero en generarse en el mapa 
@@ -25,7 +25,7 @@ public class Calculos {
     public static double heuristica(int x1, int y1, int x2, int y2) {
         return Math.abs(x1 - x2) + Math.abs(y1 - y2);
     }
-
+//  By: RETBOT
     // Método utilizado para transformar de píxeles a coordenada 
     public static int dePixelesACoordenadas(int aux) {
         int i = 0; // Posición inicial 
@@ -36,4 +36,4 @@ public class Calculos {
         return i; // y retorna la coordenada 
     }
 
-}
+}//  By: RETBOT
