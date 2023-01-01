@@ -46,7 +46,7 @@ public class Node<T> implements Comparable<Node> {
     void setState(State state) {
         this.state = state;
     }
-
+//  By: RETBOT
     // Método para obtener si el nodo esta bloquedo
     public boolean isBlocked() {
         return blocked;
@@ -86,7 +86,7 @@ public class Node<T> implements Comparable<Node> {
     void setG(double g) {
         this.g = g;
     }
-
+//  By: RETBOT
     // Método para obtener la heuristica
     public double getH() {
         return h;
@@ -121,7 +121,7 @@ public class Node<T> implements Comparable<Node> {
     public double getF() {
         return g + h;
     }
-
+//  By: RETBOT
     // Método para recuperar ruta
     public void retrievePath(List<Node<T>> path) {
         if (backPathNode != null) {
@@ -129,7 +129,7 @@ public class Node<T> implements Comparable<Node> {
         }
         path.add(this);
     }
-    
+    //  By: RETBOT
     // Método para comparar los nodos
     @Override
     public int compareTo(Node o) {
