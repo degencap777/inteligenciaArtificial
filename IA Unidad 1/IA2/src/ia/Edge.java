@@ -8,7 +8,7 @@ package ia;
 
 // clase creada para la busqueda de nodos
 public class Edge<T> {
-
+//  By: RETBOT
     private double g; // costo del nodo
     // para identificar los nodos
     private final Node<T> a; // nodo a
@@ -40,7 +40,7 @@ public class Edge<T> {
     public Node<T> getB() {
         return b;
     }
-    
+    //  By: RETBOT
     // metodo para obtener el nodo opuesto 
     public Node<T> getOppositeNode(Node<T> thisNode) {
         if (thisNode == a) { // si el nodo principal es a 
@@ -57,4 +57,4 @@ public class Edge<T> {
         return "Edge{" + "g=" + g + ", a=" + a + ", b=" + b + '}';
     }
     
-}
+}//  By: RETBOT
