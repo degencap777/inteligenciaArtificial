@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author rober
+ * @author rober//  By: RETBOT
  */
 public class Calculos extends Thread {
     // ZONA DE DECLARACION DE VARIABLES
@@ -53,7 +53,7 @@ public class Calculos extends Thread {
     
     // Bandera para el cambio de velocidad
     private boolean velocidad = false;
-    // Opciones para la parte superior, en menu
+    // Opciones para la parte superior, en menu//  By: RETBOT
     JMenuItem jMenuIniciar, jMenuPausar, jMenuReanudar;
     ///--------------------------------------------------------------------------------------------------
     // Construuctor parametrizado para inicializar las variables
@@ -92,7 +92,7 @@ public class Calculos extends Thread {
     // Implementacion del metodo run, para inicializar el hilo
     @Override
     public void run(){
-         do{
+         do{//  By: RETBOT
             calculos(); // Invocamos a la clase calculo para que empieze el proceso
             if(velocidad){
                 try {
@@ -128,7 +128,7 @@ public class Calculos extends Thread {
         // Se van almacenando en fx los resultados
         fx[i] = fxResultado;
             System.out.println("f("+(i+1)+"): "+fxResultado);
-        }
+        }//  By: RETBOT
        //-----------------------------------------------------------------------
       // fitness
         System.out.println("\nfitness(i)"); // Separador en consola
@@ -169,7 +169,7 @@ public class Calculos extends Thread {
         for (int i = 0; i < cantCromo; i++) {
             numerosAzar[i] = azar.nextDouble(); // Genera un nuevo numero aleatorio
             System.out.printf( (i+1) + ".-  %.3f\n" , numerosAzar[i] ); // Mandamos a imprimir
-        }
+        }//  By: RETBOT
          //-----------------------------------------------------------------------
         //Rangos min-max, se elige al mayor
         System.out.println("\nRango min-max, eligiendo el mayor");
@@ -233,7 +233,7 @@ public class Calculos extends Thread {
                 lugaresDeCambiosCrossover[i] = -1; // Se devuelve de lugar
             }
             System.out.println("cromosomasCrossover" + Arrays.toString(cromosomasCrossover[i]));
-        }
+        }//  By: RETBOT
          //--------------------------------------------------------------------------
          //Se declara un arreglo puntoCrossover para saber en que punto del renglon se realizara el crossover. los valores asignados son de un random entre 1 y 3, ya que 
        //el valor en la primera columna siempre se conserva. 
@@ -271,7 +271,7 @@ public class Calculos extends Thread {
                             }
                             break;
                             
-                        }
+                        }//  By: RETBOT
                     }
                     if( primero == -1 ){ // Cuando se llegue al primer lugar donde hay que hacer crossover, cambia el valor de primero y de anterior para el lugar actual. 
                                         //y debido a que a partir de aqui primero valdrá más, solo se puede entrar a este if una vez. 
@@ -310,7 +310,7 @@ public class Calculos extends Thread {
                     default : {
                     }
                 }
-        }
+        }//  By: RETBOT
         //----------------------------------------------------------------------------
         // Imprime los nuevos cromosomas
         System.out.println("Nuevos Cromosomas");
@@ -382,7 +382,7 @@ public class Calculos extends Thread {
                             colmillos, // tamaño colmillos
                             proboscide, // tamaño probóscide
                             jPanelElefante5); // panel
-              // Elefante 6
+              // Elefante 6//  By: RETBOT
               case 5 : Dibujo.dibujarElefante(jPanelElefante5.getWidth()/4, // x
                             jPanelElefante6.getHeight()/4, // y
                             piernas,// tamaño piernas
@@ -426,7 +426,7 @@ public class Calculos extends Thread {
             }
             case 2 : {    
                 return 10;
-            }
+            }//  By: RETBOT
         }
         return 10;
     }
@@ -476,7 +476,7 @@ public class Calculos extends Thread {
                 return 5;
             }
         }
-        return 5;
+        return 5;//  By: RETBOT
     }
     //------------------------------------------------------------------------------
     /// METODO PARA LAS VALIDACIONES
@@ -511,7 +511,7 @@ public class Calculos extends Thread {
         }
         }
         return !band;
-    }
+    }//  By: RETBOT
  ///----------------------------------------------------------------------------------
    // SETTERS
     public void setVelocidad(boolean velocidad){
@@ -548,7 +548,7 @@ public class Calculos extends Thread {
 ///----------------------------------------------------------------------------------
     public void setAzar(Random azar) {
         this.azar = azar;
-    }
+    }//  By: RETBOT
 ///----------------------------------------------------------------------------------
     public void setPiernasDibjo1(int piernasDibjo1) {
         this.piernasDibjo1 = piernasDibjo1;
@@ -621,7 +621,7 @@ public class Calculos extends Thread {
 ///----------------------------------------------------------------------------------
     public int[][] getNuevosCromosomas() {
         return nuevosCromosomas;
-    }
+    }//  By: RETBOT
 ///----------------------------------------------------------------------------------
     public int getCantCromo() {
         return cantCromo;
@@ -692,7 +692,7 @@ public class Calculos extends Thread {
     }
 ///----------------------------------------------------------------------------------
     public int getProboscideDibjo3() {
-        return proboscideDibjo3;
+        return proboscideDibjo3;//  By: RETBOT
     }
 ///----------------------------------------------------------------------------------
     public int getPiernasDibjo4() {
@@ -733,4 +733,4 @@ public class Calculos extends Thread {
     
     
     
-}
+}//  By: RETBOT
